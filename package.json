@@ -6,7 +6,7 @@
   "scripts": {
     "build": "webpack",
     "start": "node dist/bundle.js",
-    "dev": "nodemon --exec 'babel-node' src/index.js",
+    "dev": "nodemon --exec babel-node src/index.js",
     "test": "standard --fix"
   },
   "repository": "https://github.com/volcano-group/googlesheets",
@@ -19,5 +19,8 @@
     "nodemon": "^1.11.0",
     "standard": "^10.0.2",
     "webpack": "^2.5.0"
+  },
+  "dependencies": {
+    "babel-cli": "^6.24.1"
   }
 }
