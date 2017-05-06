@@ -1,0 +1,9 @@
+{
+  "name": "googlesheets",
+  "version": "0.0.1",
+  "description": "A modern implementation of Google Sheets API v4, batteries included. Edit",
+  "main": "dist/bundle.js",
+  "repository": "https://github.com/volcano-group/googlesheets",
+  "author": "servermeta <alberto.websci@gmail.com>",
+  "license": "MIT"
+}
