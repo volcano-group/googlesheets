@@ -1,16 +1,5 @@
-var webpack = require('webpack');
-var fs = require('fs');
-
-var nodeModules = {};
-fs.readdirSync('node_modules')
-  .filter(function(x) {
-    return ['.bin'].indexOf(x) === -1;
-  })
-  .forEach(function(mod) {
-    nodeModules[mod] = 'commonjs ' + mod;
-  });
-
-
+const webpack = require('webpack');
+const fs = require('fs');
 
 module.exports = {
     target: 'node',
@@ -26,7 +15,7 @@ module.exports = {
         rules: [
             {
                 test: /\.js$/,
-                exclude: /(node_modules|bower_components)/,
+                exclude: /(node_modules)/,
                 use: {
                     loader: 'babel-loader',
                     options: {
@@ -36,6 +25,5 @@ module.exports = {
             }
         ]
     },
-    externals: nodeModules,
     devtool: 'sourcemap'
 };

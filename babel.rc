@@ -1,4 +1,14 @@
 {
   //babel config
-  "presets": ["es2015", "stage-1"]
+  "presets": [
+      [
+        "env",
+        {
+          "targets": {
+            "node": 7.10.0
+          }
+        }
+      ],
+      "es2015", 
+      "stage-1"]
 }
