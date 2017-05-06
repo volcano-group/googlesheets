@@ -1,16 +1,9 @@
-const webpack = require('webpack');
-const fs = require('fs');
-
 module.exports = {
     target: 'node',
     entry: './src/index.js',
     output: {
         filename: './dist/bundle.js'
     },
-    plugins: [
-      new webpack.BannerPlugin({banner: 'require("source-map-support").install();',
-                                raw: true, entryOnly: false })
-    ],
     module: {
         rules: [
             {
@@ -25,5 +18,5 @@ module.exports = {
             }
         ]
     },
-    devtool: 'sourcemap'
+    devtool: 'source-map'
 };
