@@ -42,3 +42,7 @@ jspm_packages
 ## Credentials
 
 credentials/credentials.js
+
+## Bundle
+
+dist/bundle.js
