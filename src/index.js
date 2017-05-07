@@ -1,7 +1,5 @@
-function salutare(name) {
-    let nome = do {
-        "Hello "+name
-    }
-    console.log(nome)
+function salutare (name) {
+  return 'Hello ' + name
 }
-salutare("Alberto");
+let ciao = salutare('Alessandro')
+console.log(ciao)

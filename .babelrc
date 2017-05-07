@@ -1,11 +1,10 @@
 {
-  //babel config
   "presets": [
       [
         "env",
         {
           "targets": {
-            "node": 7.10.0
+            "node": 7.9
           }
         }
       ],
