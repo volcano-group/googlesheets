@@ -6,7 +6,7 @@
   "scripts": {
     "build": "webpack",
     "start": "node dist/bundle.js",
-    "dev": "nodemon --exec babel-node src/index.js",
+    "dev": "nodemon src/index.js --exec babel-node --presets es2015,stage-1",
     "test": "mocha --require babel-core/register ./tests/test.js"
   },
   "repository": "https://github.com/volcano-group/googlesheets",
