@@ -5,7 +5,6 @@ let app = require('../src/index.js');
 describe('Salutare', () => {
     it('it should say Hello', (done) => {
         app.salutare('Alberto').end((err, res) => {
-            res.should.be.a('string');
             res.should.equal.to('Hello World');
         })
     })
