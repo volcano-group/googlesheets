@@ -1,5 +1,4 @@
-function salutare (name) {
+const salutare = function (name) {
   return 'Hello ' + name
 }
-let ciao = salutare('Alessandro')
-console.log(ciao)
+export salutare;
