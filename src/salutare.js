@@ -1,6 +1,3 @@
-module.exports = {
-  salutare: function (name) {
-    return 'hello ' + name
-
-  }
+export function salutare (name) {
+  return 'Hello ' + name
 }

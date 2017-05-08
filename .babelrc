@@ -1,4 +1,12 @@
 {
-  "presets": ["es2015", "stage-1"],
-  "plugins": []
+  "env": {
+    "testing": {
+      "presets": [ "es2015", "stage-1" , { "modules": false } ] // testing with inject loader
+    },
+    "production": {
+      "presets": ["es2015", "stage-1"],
+      "plugins": []
+
+    }
+  }
 }
